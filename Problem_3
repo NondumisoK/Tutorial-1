@@ -1,0 +1,17 @@
+import numpy
+def vector_cr(n):
+  x=numpy.arange(n)
+  x=0.5*x*numpy.pi/(n-1)  # to keep array within [0,pi/2]
+  return x
+  
+def integrate_simple(n):
+  dx=numpy.pi/2/2
+  x=vector_cr(n)
+  y=numpy.cos(x)
+  sum_y=numpy.sum(y)
+  return dx*sum_y
+  
+  
+
+  
+  
